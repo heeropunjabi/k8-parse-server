@@ -1,0 +1,13 @@
+{
+  "name": "k8-parse-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "parse-dashboard": "^4.0.1",
+    "parse-server": "^4.10.4"
+  }
+}
