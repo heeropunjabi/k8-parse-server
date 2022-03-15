@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: mongo-config
+  name: app-config
 data:
   mongo-url: mongo-service
+  parse-url: parse-service

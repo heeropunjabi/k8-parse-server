@@ -7,6 +7,7 @@ console.log("config--->", config);
 var app = express();
 var api = new ParseServer({
   databaseURI: `mongodb://${config.MONGO_USER_NAME}:${config.MONGO_PASSWORD}@${config.MONGO_URI}:27017/parse?authSource=admin`,
+  //databaseURI: `mongodb://localhost:27017/parse`,
   cloud: "./cloud/main.js", // Path to your Cloud Code
   appId: "myAppId",
   masterKey: "myMasterKey", // Keep this key secret!
