@@ -14,6 +14,14 @@ export default function Home() {
       } catch (e) {
         console.log(JSON.stringify(e));
       }
+      let query = new Parse.Query("Demo2");
+      let subscription = await query.subscribe();
+      subscription.on("open", () => {
+        console.log("subscription opened");
+      });
+      subscription.on("update", (demo2) => {
+        console.log(`calling from update`, demo2); // This should output 100
+      });
     };
     callParseCloud();
   }, []);
